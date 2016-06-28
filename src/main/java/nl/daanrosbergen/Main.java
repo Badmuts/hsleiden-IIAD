@@ -9,16 +9,26 @@ import nl.daanrosbergen.mergesort.MergeSort;
 public class Main {
 
     public static void main(String[] args) {
+        testBubbleSort();
+        testMergeSort();
+        testDoubleLinkedList();
+    }
+
+    private static void testBubbleSort() {
         char[] bubble = {'M', 'B', 'D', 'A', 'K'};
         System.out.println(bubble);
         BubbleSort.sort(bubble);
         System.out.println(bubble);
+    }
 
+    private static void testMergeSort() {
         char[] merge = {'M', 'B', 'D', 'A', 'K'};
         System.out.println(merge);
         MergeSort.sort(merge);
         System.out.println(merge);
+    }
 
+    private static void testDoubleLinkedList() {
         Lijst lijst = new LijstImpl();
 
         lijst.addFirst( "Drie" );
